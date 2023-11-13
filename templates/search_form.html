@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AIDocument</title>
+</head>
+<body>
+    <form action="/search/" method="get">
+        <select name="d_type">
+            <option value="求职信">求职信</option>
+            <option value="调查报告">调查报告</option>
+            <option value="作文">作文</option>
+        </select>
+        <br>
+        <br>
+        <input name="q" type="text">
+        <br>
+        <br>
+        <input type="submit" value="生成">
+    </form>
+    <p>{{ rlt }}</p>
+</body>
+</html>

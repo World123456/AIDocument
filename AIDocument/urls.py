@@ -17,8 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from AIDocument.service import hello
+from AIDocument.service import index
+from AIDocument.service import search
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello/', hello.hello)
+    path('hello/', hello.hello),
+    path('index/', index.hello),
+    path('search/', search.search)
 ]
